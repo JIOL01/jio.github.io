@@ -1,0 +1,116 @@
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; padding: 0;
+}
+
+/*Estilos Encabezados*/
+
+header{
+    background-color: #293241;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a{
+    color: #ececec;
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:after{
+
+    content: "";
+    position: absolute;
+    background-color: #8b4bf2;
+    height: 3px;
+    width: 0; left: 0; bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-links{
+
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a:hover{color: #bf70ff;}
+
+a:hover:after{width: 100%;}
+
+.logo .logUnan{width: 65px; cursor: pointer; background-color: transparent;}
+
+
+/*Estilo cuerpo*/
+
+.hero{
+
+    background-image: url(../Image/circle-scatter-haikei.svg);
+    background-size: cover;
+    line-height: 29px;
+    text-align: center;
+    padding: 70px 0;
+    color: #fff;
+}
+
+.hero-content h1{
+
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero-content img{
+
+    width: 150px;
+    border-radius: 10px;
+    animation: flotar 1.5s ease-in-out infinite;
+    box-shadow: 0px 2px 30px rgba(149, 14, 203, 0.7);
+    
+}
+
+.hero-content p{font-size: 18px;}
+
+strong{color: #F2A74B;}
+
+@keyframes flotar{
+
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+
+        transform: translateY(-15px);
+    }
+
+    100%{
+
+        transform: translateY(0);
+    }
+}
+
+
+/*Estilo Footer*/
+
+footer{
+
+    background-color: #000000;
+    background-image: url(../Image/wave-haikei.svg);
+    background-size: cover;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}

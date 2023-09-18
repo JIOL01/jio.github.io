@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="form">
+
+        <div class="container">
+
+            <h1>Calculadora de Daño Pokemon</h1>
+
+            <p>Pokemones Disponibles: <br>Electrico, Agua, Fuego, Roca</p>
+
+            <p>Tipo del Pokemon: <input type="text" id="txtvalor1" placeholder="Ejemplo: Electrico"></p>
+            <p>Tipo del Pokemon Enemigo: <input type="text" id="txtvalor2" placeholder="Ejemplo: Fuego"></p>
+            <p>Daño del Pokemon: <input type="number" id="txtvalor3" placeholder="Ejemplo: 40"></p>
+            <p>Defensa del Pokemon: <input type="number" id="txtvalor4" placeholder="Ejemplo: 120"></p>
+
+            <button onclick="CalculateDamage()">Calcular Daño</button>
+
+            <h2>Resultado</h2>
+
+            <textarea name="" id="txtsalida" cols="30" rows="10"></textarea>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

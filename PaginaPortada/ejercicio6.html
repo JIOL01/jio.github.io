@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Imagenes</title>
+
+    <style type="text/css">
+
+        *{
+            margin: auto;
+            padding: 0;
+            text-align: center;
+        }
+
+        header{
+            font: bold 1.3em verdana;
+            background-color: #feffe4;
+        }
+
+        h1{
+            text-align: center; padding: 0.5em;
+        }
+
+        nav{
+            float: left; width: 25%; background-color: #e3f2ff;
+        }
+
+        nav img {
+            width: 35%; margin: 5%; cursor: pointer;
+        }
+
+        #principal { float: left; width: 75%;}
+
+        #visor{ width: 60%; margin: 10%;}
+
+        #visor img { width: 100%;}
+
+    </style>
+
+</head>
+
+<body>
+
+    <header><h1>Visor de Imagenes</h1></header>
+
+    <nav>
+
+        <img src="Image/foto1.jpg" alt="1. India - Agra - El Taj Majal." name="fotos1" onclick="mifoto(1)">
+        <img src="Image/foto2.jpg" alt="2. Albania - Region de Ballsh." name="fotos2" onclick="mifoto(2)">
+        <img src="Image/foto3.jpg" alt="3. Atenas - Pertenon." name="fotos3" onclick="mifoto(3)">
+        <img src="Image/foto4.jpg" alt="4. Belgica - Ambares" name="fotos4" onclick="mifoto(4)">
+        <img src="Image/foto5.jpg" alt="5. Costa Rica" name="fotos5" onclick="mifoto(5)">
+        <img src="Image/foto6.jpg" alt="6. Egipto" name="fotos6" onclick="mifoto(6)">
+        <img src="Image/foto7.jpg" alt="7. España" name="fotos7" onclick="mifoto(7)">
+        <img src="Image/foto8.jpg" alt="8. España" name="fotos8" onclick="mifoto(8)">
+    
+    </nav>
+
+    <div id="principal">
+        <div id="visor">
+            <img src="Image/foto1.jpg" alt="1. India - Agra - El Taj Majal." name="fotovisor">
+            <div id="titulo">1. India - Agra - El Taj Majal.</div>
+        </div>
+    </div>
+    
+    <script type="text/JavaScript">
+
+        window.onload = function() {
+    
+            visor1 = document.getElemetById("visor");
+            mititulo = document.getElemetById("titulo")
+    
+        }
+    
+        function mifoto(num) {
+
+            f = "Image/foto"+num+".jpg";
+            document.images["fotovisor"].src=f;
+            t = document.images["fotos"+num].alt;
+            mititulo.innerHTML=t;
+        }
+    
+    </script>
+ 
+
+</body>
+</html>
